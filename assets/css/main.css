@@ -1,0 +1,57 @@
+body{
+	margin: 0;
+}
+
+ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #983352;
+	font-family: Reboto;
+}
+
+
+ul li {
+	display: inline-block;
+}
+
+ul li a{
+	display: inline-block;
+	color: white;
+	text-align: center;
+	padding: 26px;
+	text-decoration: none;
+}
+
+li a:hover, .dropdown:hover, .dropbtn:hover{
+	background-color: #FFC2AA;
+	color: #333;
+}
+
+/* El display:none hace que el menú aparezca y desaparezca
+cuando ponemos el cursos encima*/
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #D4886A;
+	min-width: 180px
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+	z-index: 1;
+}
+
+.dropdown-content a {
+	color: black;
+	padding: 12px 68px;
+	text-decoration: none;
+	display: block;
+	text-align: center;
+}
+
+.dropdown-content a:hover {
+	background-color: #E498AF;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
